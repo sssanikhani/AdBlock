@@ -9,8 +9,7 @@ goto check
 :restart
 taskkill /f /im "Spotify.exe"
 timeout 2 > nul
-nircmd elevate <Spotify.exe Path>
+nircmd elevate "C:\Program Files\SpotifyAdBlock\Spotify"
 timeout 2 > nul
-cscript <playMusic.vbs Path>
-
+cscript "C:\Program Files\SpotifyAdBlock\playMusic.vbs"
 goto check
